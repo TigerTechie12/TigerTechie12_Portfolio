@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
@@ -52,6 +52,7 @@ const projects = [
 const Work = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const touchStartX = useRef(0);
 
   const goToSlide = useCallback(
     (index: number) => {
@@ -74,6 +75,17 @@ const Work = () => {
       currentIndex === projects.length - 1 ? 0 : currentIndex + 1;
     goToSlide(newIndex);
   }, [currentIndex, goToSlide]);
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  }, []);
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      diff > 0 ? goToNext() : goToPrev();
+    }
+  }, [goToNext, goToPrev]);
 
   return (
     <div className="work-section" id="work">
@@ -102,7 +114,11 @@ const Work = () => {
           </button>
 
           {/* Slides */}
-          <div className="carousel-track-container">
+          <div
+            className="carousel-track-container"
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+          >
             <div
               className="carousel-track"
               style={{

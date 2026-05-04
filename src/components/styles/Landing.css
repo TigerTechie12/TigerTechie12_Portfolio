@@ -322,6 +322,33 @@ h2.landing-info-h2 {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .landing-section {
+    height: auto;
+    padding: 100px 0 60px;
+  }
+
+  .landing-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .landing-intro {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .landing-info {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    transform: none;
+  }
+}
+
 @media screen and (min-width: 1025px) {
   .character-model {
     height: 100vh;
