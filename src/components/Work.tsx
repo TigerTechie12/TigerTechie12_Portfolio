@@ -28,7 +28,7 @@ const projects = [
   {
    title: "Buildify",
     category: "In-Browser AI Web Builder & Code Editor",
-    tools: "React, Express.js, WebContainers, Groq SDK, LLaMA Models, Tailwind CSS",
+    tools: "React, Express.js, WebContainers, Groq SDK, LLaMA Models",
     image: "/images/buildify.png",
     link: "https://orrdr.com",
   },
@@ -36,7 +36,7 @@ const projects = [
   {
     title: "Survey-Poll",
     category: "Full-Stack Survey & Polling Application",
-    tools: "React, Express.js, PostgreSQL, Prisma, Tailwind CSS, JWT",
+    tools: "React, Express.js, PostgreSQL, Prisma, JWT",
     image: "/images/surveypoll.png",
     link: "https://orrdr.com",
   },
