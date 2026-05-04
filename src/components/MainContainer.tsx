@@ -37,17 +37,17 @@ const MainContainer = ({ children }: PropsWithChildren) => {
       setAllTimeline();
       let p = 0;
       const interval = setInterval(() => {
-        p = Math.min(p + 12, 100);
+        p = Math.min(p + 20, 100);
         setLoading(p);
         if (p >= 100) clearInterval(interval);
-      }, 60);
+      }, 40);
       return () => clearInterval(interval);
     }
   }, []);
 
   return (
     <div className="container-main">
-      <Cursor />
+      {isDesktopView && <Cursor />}
       <Navbar />
       <SocialIcons />
       {isDesktopView && children}
