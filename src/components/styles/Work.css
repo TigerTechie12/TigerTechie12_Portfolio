@@ -329,3 +329,82 @@
     max-height: 250px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .work-section {
+    padding: 30px 0;
+  }
+
+  .work-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .carousel-slide {
+    padding: 16px 0;
+  }
+
+  .carousel-content {
+    gap: 12px;
+  }
+
+  .carousel-info {
+    gap: 10px;
+  }
+
+  .carousel-details {
+    gap: 4px;
+  }
+
+  .carousel-number h3 {
+    font-size: 26px;
+  }
+
+  .carousel-details h4 {
+    font-size: 16px;
+  }
+
+  .carousel-category {
+    font-size: 12px;
+  }
+
+  .carousel-tools {
+    margin-top: 6px;
+  }
+
+  .carousel-tools .tools-label {
+    font-size: 11px;
+  }
+
+  .carousel-tools p {
+    font-size: 12px;
+    margin-top: 3px;
+  }
+
+  .work-image img {
+    max-height: 150px;
+  }
+
+  /* Move arrows to sit beside the dot indicators */
+  .carousel-arrow {
+    top: auto;
+    bottom: 4px;
+    transform: none;
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
+  }
+
+  .carousel-arrow-left {
+    left: 10px;
+  }
+
+  .carousel-arrow-right {
+    right: 10px;
+  }
+
+  .carousel-dots {
+    margin-top: 20px;
+    padding: 0 50px;
+  }
+}
