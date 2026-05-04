@@ -87,20 +87,19 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>AI & AUTOMATION</h3>
-              <h4>Workflow Intelligence for Organizations</h4>
+              <h3>FULL-STACK & SECURITY</h3>
+              <h4>Robust Architecture & E2EE</h4>
               <p>
-                AI specialist helping organizations automate workflows—internal ops
-                and customer-facing—so teams ship faster with less manual work.
+                IIT Roorkee undergrad building scalable, high-performance applications. I engineer secure communication tools like GhostLink and ChatPay (E2EE + payments) alongside interactive digital experiences like Cyberscape.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">LLMs &amp; agents</div>
-                <div className="what-tags">Workflow design</div>
-                <div className="what-tags">RAG &amp; retrieval</div>
-                <div className="what-tags">Evals &amp; guardrails</div>
-                <div className="what-tags">Integrations</div>
-                <div className="what-tags">Product strategy</div>
+                <div className="what-tags">React &amp; Next.js</div>
+                <div className="what-tags">Node.js &amp; Express</div>
+                <div className="what-tags">PostgreSQL &amp; Prisma</div>
+                <div className="what-tags">WebSockets</div>
+                <div className="what-tags">Cryptography (E2EE)</div>
+                <div className="what-tags">System Architecture</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -124,21 +123,19 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BUILD &amp; SCALE</h3>
-              <h4>Shipping AI in Production</h4>
+              <h3>APPLIED AI &amp; WEB3</h3>
+              <h4>Intelligent &amp; Decentralized Systems</h4>
               <p>
-                I build the systems behind it: APIs, data, voice/real-time, and
-                full-stack products—production-ready, not slide decks.
+                Passionate about pushing the boundaries of AI and blockchain. From developing DreamSnap's AI photo generation to building award-winning Web3 projects recognized at ETHGlobal New Delhi.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Python</div>
-                <div className="what-tags">REST &amp; real-time APIs</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Cloud &amp; infra</div>
+                <div className="what-tags">Applied AI</div>
+                <div className="what-tags">LLM Integrations</div>
+                <div className="what-tags">Solana Ecosystem</div>
+                <div className="what-tags">Smart Contracts</div>
+                <div className="what-tags">Redis Caching</div>
+                <div className="what-tags">Hackathon Winner</div>
               </div>
               <div className="what-arrow"></div>
             </div>

@@ -5,33 +5,48 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+   title: "ChatPay",
+    category: "Full-Stack Payments & E2EE Chat Platform",
+    tools: "Next.js, Node.js, PostgreSQL, Redis, WebSockets, TweetNaCl",
+    image: "/images/chatpay.png",
+    link: "https://chat-pay-two.vercel.app/",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    title: "DreamSnap AI",
+    category: "AI Model Training & Image Generation Platform",
+    tools: "React, Node.js, Prisma, PostgreSQL, fal.ai, AWS S3, Clerk",
+    image: "/images/dreamsnap.png",
+    link: "https://dream-snap-eight.vercel.app/",
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
+    title: "Cyberscape",
+    category: "2D Metaverse Gaming Application",
+    tools: "React, Node.js, WebSockets, Canvas API, PostgreSQL, Prisma",
+    image: "/images/cyberscape.png",
+    link: "https://cyberscape-mu.vercel.app/",
   },
   {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
+   title: "Buildify",
+    category: "In-Browser AI Web Builder & Code Editor",
+    tools: "React, Express.js, WebContainers, Groq SDK, LLaMA Models, Tailwind CSS",
+    image: "/images/buildify.png",
     link: "https://orrdr.com",
   },
+  
+  {
+    title: "Survey-Poll",
+    category: "Full-Stack Survey & Polling Application",
+    tools: "React, Express.js, PostgreSQL, Prisma, Tailwind CSS, JWT",
+    image: "/images/surveypoll.png",
+    link: "https://orrdr.com",
+  },
+
+  {title: "PayFlow",
+    category: "Universal Cross-Chain Payroll System",
+    tools: "React, Web3, Yellow Network SDK, LI.FI SDK, Sui Move",
+    image: "/images/payflow.png",
+    link: "https://pay-flow-delta.vercel.app/",
+  }
 ];
 
 const Work = () => {
