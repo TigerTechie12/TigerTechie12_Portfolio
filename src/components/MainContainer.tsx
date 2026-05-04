@@ -9,6 +9,8 @@ import SocialIcons from "./SocialIcons";
 import WhatIDo from "./WhatIDo";
 import Work from "./Work";
 import setSplitText from "./utils/splitText";
+import { setAllTimeline } from "./utils/GsapScroll";
+import { useLoading } from "../context/LoadingProvider";
 
 const TechStack = lazy(() => import("./TechStack"));
 
@@ -16,6 +18,7 @@ const MainContainer = ({ children }: PropsWithChildren) => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
     window.innerWidth > 1024
   );
+  const { setLoading } = useLoading();
 
   useEffect(() => {
     const resizeHandler = () => {
@@ -28,6 +31,19 @@ const MainContainer = ({ children }: PropsWithChildren) => {
       window.removeEventListener("resize", resizeHandler);
     };
   }, [isDesktopView]);
+
+  useEffect(() => {
+    if (window.innerWidth <= 1024) {
+      setAllTimeline();
+      let p = 0;
+      const interval = setInterval(() => {
+        p = Math.min(p + 12, 100);
+        setLoading(p);
+        if (p >= 100) clearInterval(interval);
+      }, 60);
+      return () => clearInterval(interval);
+    }
+  }, []);
 
   return (
     <div className="container-main">
