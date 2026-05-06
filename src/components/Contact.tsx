@@ -46,7 +46,9 @@ const Contact = () => {
               LinkedIn <MdArrowOutward />
             </a>
             <a
-              href="mailto:shreyashiitr22@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&to=shreyashiitr22@gmail.com"
+              target="_blank"
+              rel="noreferrer"
               data-cursor="disable"
               className="contact-social"
             >

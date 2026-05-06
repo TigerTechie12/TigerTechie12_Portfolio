@@ -38,6 +38,14 @@
 a.contact-social {
   font-size: 25px;
   border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+a.contact-social svg {
+  font-size: 1em;
+  flex-shrink: 0;
 }
 
 .contact-box h2 {
