@@ -88,6 +88,15 @@
   font-size: 16px;
 }
 
+.carousel-description {
+  font-size: 15px;
+  font-weight: 300;
+  color: #c8c6c6;
+  margin: 4px 0 0;
+  line-height: 1.6;
+  max-width: 480px;
+}
+
 .carousel-tools {
   margin-top: 16px;
 }
@@ -105,6 +114,51 @@
   color: #adacac;
   margin: 6px 0 0;
   font-size: 15px;
+}
+
+/* ── Action Buttons ── */
+.carousel-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.carousel-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.carousel-btn-live {
+  background-color: var(--accentColor);
+  color: #0a0a0a;
+  border: 1px solid var(--accentColor);
+}
+
+.carousel-btn-live:hover {
+  background-color: transparent;
+  color: var(--accentColor);
+}
+
+.carousel-btn-github {
+  background-color: transparent;
+  color: #eae5ec;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.carousel-btn-github:hover {
+  border-color: var(--accentColor);
+  color: var(--accentColor);
+  background-color: rgba(94, 234, 212, 0.08);
 }
 
 .carousel-image-wrapper {
@@ -328,6 +382,15 @@
   .work-image img {
     max-height: 250px;
   }
+
+  .carousel-description {
+    font-size: 14px;
+  }
+
+  .carousel-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -368,6 +431,12 @@
     font-size: 12px;
   }
 
+  .carousel-description {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 2px;
+  }
+
   .carousel-tools {
     margin-top: 6px;
   }
@@ -379,6 +448,17 @@
   .carousel-tools p {
     font-size: 12px;
     margin-top: 3px;
+  }
+
+  .carousel-actions {
+    margin-top: 10px;
+    gap: 8px;
+  }
+
+  .carousel-btn {
+    padding: 7px 14px;
+    font-size: 12px;
+    gap: 4px;
   }
 
   .work-image img {

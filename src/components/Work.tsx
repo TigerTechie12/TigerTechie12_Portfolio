@@ -1,52 +1,61 @@
 import { useState, useCallback, useRef } from "react";
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
-import { MdArrowBack, MdArrowForward } from "react-icons/md";
+import { MdArrowBack, MdArrowForward, MdArrowOutward } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-   title: "ChatPay",
+    title: "ChatPay",
     category: "Full-Stack Payments & E2EE Chat Platform",
-    tools: "Next.js, Node.js, PostgreSQL, Redis, WebSockets, TweetNaCl",
+description: `An integrated ecosystem that merges end-to-end encrypted messaging with frictionless financial routing. It eliminates the barrier between communication and commerce by allowing users to execute instant P2P transfers and merchant payments directly within their chat interface. Engineered with military-grade NaCl (TweetNaCl) end-to-end encryption, the server acts purely as a WebSocket relay, ensuring absolute data privacy. It features automated OAuth for merchants, dynamic QR code generation, and robust financial infrastructure integrated with Stripe for OnRamps and Razorpay for OffRamp payouts.`,    tools: "Next.js, Node.js, PostgreSQL, Redis, WebSockets, TweetNaCl",
     image: "/images/chatpay.png",
     link: "https://chat-pay-two.vercel.app/",
+    github: "https://github.com/TigerTechie12/ChatPay",
   },
   {
     title: "DreamSnap AI",
     category: "AI Model Training & Image Generation Platform",
+    description: `A highly scalable SaaS platform that democratizes proprietary AI model training for brands and creators. Moving beyond generic prompting, it integrates with fal.ai to allow users to train entirely custom AI models on their own localized datasets. It empowers creators to generate, iterate, and curate bulk visual assets into managed 'Image Packs', drastically reducing content production costs. Built for enterprise readiness with Clerk authentication, the platform utilizes a robust TypeScript backend with Prisma, PostgreSQL, and AWS S3 for high-throughput asset storage.`,
     tools: "React, Node.js, Prisma, PostgreSQL, fal.ai, AWS S3, Clerk",
     image: "/images/dreamsnap.png",
     link: "https://dream-snap-eight.vercel.app/",
+    github: "https://github.com/TigerTechie12/DreamSnap",
   },
   {
     title: "Cyberscape",
     category: "2D Metaverse Gaming Application",
-    tools: "React, Node.js, WebSockets, Canvas API, PostgreSQL, Prisma",
+description: `A browser-native, real-time spatial collaboration and gaming environment built for instant accessibility. Capitalizing on the market for lightweight virtual spaces, it runs entirely in the browser via React and the Canvas API. It is powered by a highly concurrent WebSocket backend that handles live movement, collision detection, and spatial interactions with zero perceived latency. The platform features a dynamic grid-building engine where users can curate virtual real estate using admin-managed element libraries, driving organic community growth.`,    tools: "React, Node.js, WebSockets, Canvas API, PostgreSQL, Prisma",
     image: "/images/cyberscape.png",
     link: "https://cyberscape-mu.vercel.app/",
+    github: "https://github.com/TigerTechie12/Cyberscape",
   },
   {
-   title: "Buildify",
+    title: "Buildify",
     category: "In-Browser AI Web Builder & Code Editor",
-    tools: "React, Express.js, WebContainers, Groq SDK, LLaMA Models",
+    description: `A next-generation development tool that eliminates setup friction and accelerates product iteration. By integrating StackBlitz WebContainers, Buildify boots full Node.js environments directly inside the user's browser, turning any device into a powerful development machine instantly. It is supercharged by integrating LLaMA models via the Groq SDK to function as an embedded AI pair-programmer. With a real-time live preview architecture that compiles code instantaneously, it bridges the gap between low-code ease of use and pro-code flexibility.`,    tools: "React, Express.js, WebContainers, Groq SDK, LLaMA Models",
     image: "/images/buildify.png",
     link: "https://orrdr.com",
+    github: "https://github.com/TigerTechie12/Buildify",
   },
-  
   {
     title: "Survey-Poll",
     category: "Full-Stack Survey & Polling Application",
-    tools: "React, Express.js, PostgreSQL, Prisma, JWT",
+    description: `A high-performance data collection platform built to capture and analyze audience sentiment instantaneously. Engineered to process and broadcast real-time voting data, it provides instant statistical feedback crucial for high-stakes decision-making. The platform implements rigorous JWT authentication and bcrypt password hashing to ensure the integrity of the voting process. Utilizing the speed and type-safety of TypeScript, Express.js, and Prisma ORM, the backend efficiently routes and stores massive influxes of concurrent requests during viral polling events.`    tools: "React, Express.js, PostgreSQL, Prisma, JWT",
     image: "/images/surveypoll.png",
-    link: "https://orrdr.com",
+    link: "https://survey-poll-app-1.vercel.app/",
+    github: "https://github.com/TigerTechie12/Survey-Poll",
   },
-
-  {title: "PayFlow",
+  {
+    title: "PayFlow",
     category: "Universal Cross-Chain Payroll System",
+    description:
+      "A decentralized payroll system enabling businesses to disburse multi-token salaries across blockchain networks with automated cross-chain bridging.",
     tools: "React, Web3, Yellow Network SDK, LI.FI SDK, Sui Move",
     image: "/images/payflow.png",
     link: "https://pay-flow-delta.vercel.app/",
-  }
+    github: "https://github.com/TigerTechie12/PayFlow",
+  },
 ];
 
 const Work = () => {
@@ -134,12 +143,33 @@ const Work = () => {
                       </div>
                       <div className="carousel-details">
                         <h4>{project.title}</h4>
-                        <p className="carousel-category">
-                          {project.category}
+                        <p className="carousel-category">{project.category}</p>
+                        <p className="carousel-description">
+                          {project.description}
                         </p>
                         <div className="carousel-tools">
-                          <span className="tools-label">Tools & Features</span>
+                          <span className="tools-label">Tools & Stack</span>
                           <p>{project.tools}</p>
+                        </div>
+                        <div className="carousel-actions">
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="carousel-btn carousel-btn-live"
+                            data-cursor="disable"
+                          >
+                            View Live <MdArrowOutward />
+                          </a>
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="carousel-btn carousel-btn-github"
+                            data-cursor="disable"
+                          >
+                            GitHub <FaGithub />
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -147,7 +177,6 @@ const Work = () => {
                       <WorkImage
                         image={project.image}
                         alt={project.title}
-                        link={project.link}
                       />
                     </div>
                   </div>
@@ -161,8 +190,9 @@ const Work = () => {
             {projects.map((_, index) => (
               <button
                 key={index}
-                className={`carousel-dot ${index === currentIndex ? "carousel-dot-active" : ""
-                  }`}
+                className={`carousel-dot ${
+                  index === currentIndex ? "carousel-dot-active" : ""
+                }`}
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to project ${index + 1}`}
                 data-cursor="disable"

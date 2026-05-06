@@ -1,4 +1,4 @@
-import { MdArrowOutward, MdCopyright } from "react-icons/md";
+import { MdArrowOutward, MdCopyright, MdEmail } from "react-icons/md";
 import "./styles/Contact.css";
 
 const Contact = () => {
@@ -45,7 +45,13 @@ const Contact = () => {
             >
               LinkedIn <MdArrowOutward />
             </a>
-        
+            <a
+              href="mailto:shreyashiitr22@gmail.com"
+              data-cursor="disable"
+              className="contact-social"
+            >
+              Email <MdEmail />
+            </a>
           </div>
           <div className="contact-box">
             <h2>
