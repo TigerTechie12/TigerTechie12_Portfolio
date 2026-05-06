@@ -48,6 +48,25 @@ a.contact-social svg {
   flex-shrink: 0;
 }
 
+.contact-education {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-education p {
+  margin: 0;
+}
+
+.contact-edu-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .contact-box h2 {
   font-weight: 400;
   font-size: 23px;

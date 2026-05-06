@@ -20,10 +20,17 @@ const Contact = () => {
               </a>
             </p>
             <h4>Education</h4>
-            <p>
-              B.Tech, Indian Institute Of Technology Roorkee —
-              2022–2027
-            </p>
+            <div className="contact-education">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/2/2d/Indian_Institute_of_Technology_Roorkee_Logo.svg"
+                alt="IIT Roorkee"
+                className="contact-edu-logo"
+              />
+              <p>
+                B.Tech, Indian Institute Of Technology Roorkee —
+                2022–2027
+              </p>
+            </div>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
