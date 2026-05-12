@@ -4,6 +4,14 @@ import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward, MdArrowOutward } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 
+/*  {
+    title: "Buildify",
+    category: "In-Browser AI Web Builder & Code Editor",
+    description: `A next-generation development tool that eliminates setup friction and accelerates product iteration. By integrating StackBlitz WebContainers, Buildify boots full Node.js environments directly inside the user's browser, turning any device into a powerful development machine instantly. It is supercharged by integrating LLaMA models via the Groq SDK to function as an embedded AI pair-programmer. With a real-time live preview architecture that compiles code instantaneously, it bridges the gap between low-code ease of use and pro-code flexibility.`,    tools: "React, Express.js, WebContainers, Groq SDK, LLaMA Models",
+    image: "/images/buildify.png",
+    link: "https://orrdr.com",
+    github: "https://github.com/TigerTechie12/Buildify",
+  }, */
 const projects = [
   {
     title: "ChatPay",
@@ -30,14 +38,7 @@ description: `A browser-native, real-time spatial collaboration and gaming envir
     link: "https://cyberscape-mu.vercel.app/",
     github: "https://github.com/TigerTechie12/Cyberscape",
   },
-  {
-    title: "Buildify",
-    category: "In-Browser AI Web Builder & Code Editor",
-    description: `A next-generation development tool that eliminates setup friction and accelerates product iteration. By integrating StackBlitz WebContainers, Buildify boots full Node.js environments directly inside the user's browser, turning any device into a powerful development machine instantly. It is supercharged by integrating LLaMA models via the Groq SDK to function as an embedded AI pair-programmer. With a real-time live preview architecture that compiles code instantaneously, it bridges the gap between low-code ease of use and pro-code flexibility.`,    tools: "React, Express.js, WebContainers, Groq SDK, LLaMA Models",
-    image: "/images/buildify.png",
-    link: "https://orrdr.com",
-    github: "https://github.com/TigerTechie12/Buildify",
-  },
+
   {
     title: "Survey-Poll",
     category: "Full-Stack Survey & Polling Application",
