@@ -24,7 +24,7 @@ const Contact = () => {
                 />
               </a>
               <p>
-                B.Tech, Indian Institute Of Technology Roorkee —
+                Undergrad, Indian Institute Of Technology Roorkee —
                 2022–2027
               </p>
             </div>
