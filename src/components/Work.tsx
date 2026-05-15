@@ -44,7 +44,7 @@ description: `A browser-native, real-time spatial collaboration and gaming envir
     category: "Full-Stack Survey & Polling Application",
     description: `A high-performance data collection platform built to capture and analyze audience sentiment instantaneously. Engineered to process and broadcast real-time voting data, it provides instant statistical feedback crucial for high-stakes decision-making. The platform implements rigorous JWT authentication and bcrypt password hashing to ensure the integrity of the voting process. Utilizing the speed and type-safety of TypeScript, Express.js, and Prisma ORM, the backend efficiently routes and stores massive influxes of concurrent requests during viral polling events.`,
         tools: "React, Express.js, PostgreSQL, Prisma, JWT",
-    image: "surveypoll.png",
+    image: "/images/surveypoll.png",
     link: "https://survey-poll-app-1.vercel.app/",
     github: "https://github.com/TigerTechie12/Survey-Poll",
   },
@@ -54,7 +54,7 @@ description: `A browser-native, real-time spatial collaboration and gaming envir
     description:
       "A decentralized payroll system enabling businesses to disburse multi-token salaries across blockchain networks with automated cross-chain bridging.",
     tools: "React, Web3, Yellow Network SDK, LI.FI SDK, Sui Move",
-    image: "payflow.png",
+    image: "/images/payflow.png",
     link: "https://pay-flow-delta.vercel.app/",
     github: "https://github.com/TigerTechie12/PayFlow",
   },
