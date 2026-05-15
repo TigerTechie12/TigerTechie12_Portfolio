@@ -8,17 +8,7 @@ const Contact = () => {
         <h3>Contact</h3>
         <div className="contact-flex">
           <div className="contact-box">
-            <h4>Connect</h4>
-            <p>
-              <a
-                href="https://www.linkedin.com/in/shreyash-srivastava-195597267/"
-                target="_blank"
-                rel="noreferrer"
-                data-cursor="disable"
-              >
-                LinkedIn — ShreyashSrivastava
-              </a>
-            </p>
+            
             <h4>Education</h4>
             <div className="contact-education">
               <a
