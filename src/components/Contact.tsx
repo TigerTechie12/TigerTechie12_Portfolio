@@ -21,11 +21,18 @@ const Contact = () => {
             </p>
             <h4>Education</h4>
             <div className="contact-education">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/2/2d/Indian_Institute_of_Technology_Roorkee_Logo.svg"
-                alt="IIT Roorkee"
-                className="contact-edu-logo"
-              />
+              <a
+                href="https://iitr.ac.in/"
+                target="_blank"
+                rel="noreferrer"
+                data-cursor="disable"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/2/2d/Indian_Institute_of_Technology_Roorkee_Logo.svg"
+                  alt="IIT Roorkee"
+                  className="contact-edu-logo"
+                />
+              </a>
               <p>
                 B.Tech, Indian Institute Of Technology Roorkee —
                 2022–2027
