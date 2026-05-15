@@ -11,7 +11,7 @@ const Contact = () => {
             <h4>Connect</h4>
             <p>
               <a
-                href=""
+                href="https://www.linkedin.com/in/shreyash-srivastava-195597267/"
                 target="_blank"
                 rel="noreferrer"
                 data-cursor="disable"
