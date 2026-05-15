@@ -51,7 +51,7 @@ const Contact = () => {
               GitHub <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/shreyash-srivastava-195597267?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+              href="https://www.linkedin.com/in/shreyash-srivastava-195597267/"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
