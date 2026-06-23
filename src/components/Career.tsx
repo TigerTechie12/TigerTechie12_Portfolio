@@ -8,6 +8,32 @@ const Career = () => {
           My journey <span>&</span>
           <br /> milestones
         </h2>
+ <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Software Engineer Intern</h4>
+                <h5> <a href="https://www.solarsquare.in/homes/?utm_term=solarsquare&utm_campaign=DR_Search_Brand_AllCities_Jan13&utm_source=adwords&utm_medium=ppc&hsa_acc=1384667780&hsa_cam=19566406052&hsa_grp=152005427984&hsa_ad=644801250633&hsa_src=g&hsa_tgt=kwd-831268040081&hsa_kw=solarsquare&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=19566406052&gclid=CjwKCAjw3ejRBhAdEiwADkqPn37u-kDEhIezhNQ5d_fQ_g41DM0tUCQgVM667m4T9ZI0DNwPSk5M3RoCyxsQAvD_BwE"
+                 target="_blank"
+                rel="noreferrer"
+                data-cursor="disable">SolarSquare</a></h5>
+              </div>
+              <h3>June 2026- September 2026</h3>
+            </div>
+            <ul>
+              <li>Engineered Akagami, an ultra-fast rule engine HTTP service built natively on the Bun runtime and Bun.serve(),
+entirely bypassing Node.js/Express overhead to power a real-time solar-sales nudge system.</li>
+<li> Designed an in-memory caching registry that resolves complex multi-level taxonomies in exactly two database
+queries, achieving zero database I/O during rule evaluation and validation workflows.</li>
+<li>Developed a recursive AST validation walker utilizing JSON-Logic to strictly enforce type-safety, allowed operators,
+and structural constraints at write-time, fully preventing invalid business rules from persisting to PostgreSQL.</li>
+<li>Built a high-throughput runtime evaluation pipeline supporting batch processing, custom set operators, and a
+priority-based deduplication algorithm to seamlessly deliver optimized sales interventions.</li>
+<li>Implemented custom database exception-mapping middleware via Prisma ORM to intercept and translate internal
+errors into precise, client-safe HTTP statuses, integrating structured Winston logs for trace auditing</li>
+            </ul>
+          </div>
+
+
         <div className="career-info">
           <div className="career-timeline">
             <div className="career-dot"></div>
