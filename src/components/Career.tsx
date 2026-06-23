@@ -12,10 +12,10 @@ const Career = () => {
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Software Engineer Intern</h4>
-                <h5> <a href="https://www.solarsquare.in/homes/?utm_term=solarsquare&utm_campaign=DR_Search_Brand_AllCities_Jan13&utm_source=adwords&utm_medium=ppc&hsa_acc=1384667780&hsa_cam=19566406052&hsa_grp=152005427984&hsa_ad=644801250633&hsa_src=g&hsa_tgt=kwd-831268040081&hsa_kw=solarsquare&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=19566406052&gclid=CjwKCAjw3ejRBhAdEiwADkqPn37u-kDEhIezhNQ5d_fQ_g41DM0tUCQgVM667m4T9ZI0DNwPSk5M3RoCyxsQAvD_BwE"
+                <h4> <a href="https://www.solarsquare.in/homes/?utm_term=solarsquare&utm_campaign=DR_Search_Brand_AllCities_Jan13&utm_source=adwords&utm_medium=ppc&hsa_acc=1384667780&hsa_cam=19566406052&hsa_grp=152005427984&hsa_ad=644801250633&hsa_src=g&hsa_tgt=kwd-831268040081&hsa_kw=solarsquare&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=19566406052&gclid=CjwKCAjw3ejRBhAdEiwADkqPn37u-kDEhIezhNQ5d_fQ_g41DM0tUCQgVM667m4T9ZI0DNwPSk5M3RoCyxsQAvD_BwE"
                  target="_blank"
                 rel="noreferrer"
-                data-cursor="disable">SolarSquare</a></h5>
+                data-cursor="disable">SolarSquare</a></h4>
               </div>
               <h3>June 2026- September 2026</h3>
             </div>
